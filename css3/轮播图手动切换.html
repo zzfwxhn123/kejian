@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			.listbox{width: 1200px;height: 400px;border: 2px black solid;position: relative;margin: 40px auto;}
+			            /*margin: 40px auto;表示上面间距为40px,然后居中显示*/
+			.listpic{width:1200px;height: 400px;overflow: hidden;}/*overflow: hidden;的意思是超出就隐藏*/
+			 
+			  #pic1{width:1200px;height: 400px;}
+			  #pic2{width:1200px;height: 400px;}
+			  #pic3{width:1200px;height: 400px;}
+			  #pic4{width:1200px;height: 400px;}/*单独设置图片宽高度*/
+			 
+			  .listbox ul{position: absolute;right: 30px;bottom: 10px;}
+			              /*相对于父元素的绝对定位,让li可以出现在父元素上  此处ul不必设置宽高*/
+			  .listbox ul li{width: 80px; height: 40px;background:rgba(0,0,0,0.5);margin: 3px;float: left;list-style: none;
+			                 line-height: 35px;text-align: center;}
+			                 /*li采用透明度,所以不用设置背景颜色*/
+			  .listbox ul li:hover{background:rgba(0,0,0,0.8);}/*rgba最后一个的意思是透明度*/
+			  .listbox ul li a { color: white;text-decoration: none;font-size: 22px;} /*此处的a千万前面不能加.*/    
+		</style>
+	</head>
+	<body>
+		<div class="listbox">
+			<div class="listpic">
+				<img src="../前端学习/前端系统知识/image/xmad_15476942090876_owaIH.jpg" id="pic1"/>
+				   <!-- id="pic1"设置id名，以便在下面的超链接中显示图片-->
+				<img src="../前端学习/前端系统知识/image/xmad_15548066625675_jhzWS.jpg" id="pic2"/>
+				<img src="../前端学习/前端系统知识/image/xmad_15531616186528_UuyIn.jpg" id="pic3"/>
+				<img src="../前端学习/前端系统知识/image/xmad_15586250644634_HFCOv.jpg" id="pic4"/>
+			</div>
+			<ul>
+				<li><a href="#pic1" >1</a></li><!--锚点 单页面内实现跳转   样式 <a href="#要跳转页面的名称" >文字属性</a>-->
+				<li><a href="#pic2" >2</a></li>
+				<li><a href="#pic3" >3</a></li>
+				<li><a href="#pic4" >4</a></li>
+			</ul>
+			
+		实际操作过程：<br>1.先设置放置几张轮播图的一个大容器，设置溢出隐藏<br>
+		             2.设置好图片宽高<br>
+			         3.设置ul li 的样式 通过定位将之放置到父容器中<br>
+			         4.将ul li 中的a标签中的超链接与图片名称链接
+			
+			
+			
+		</div>
+	</body>
+</html>

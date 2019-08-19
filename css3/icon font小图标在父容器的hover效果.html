@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.boxpic{width: 600px;height: 350px;border: 1px black solid;box-shadow: 5px 5px 8px;
+			              position: relative;margin: 50px auto;transition: all 1.5s;overflow: hidden;}
+			.boxpic img:nth-of-type(1){width: 600px;height: 350px;top: 0;}
+			.boxpic .shadow{width: 600px;height: 360px;position: absolute;top: -20px;background-color: white;opacity: 0; transition: all 1.5s;}
+			  .boxpic:hover .shadow{opacity: 0.8;}
+			
+			.boxpic .iconfont1{width: 300px;height: 260px;border: 1px saddlebrown solid;left:-300px;top:40px;
+			                  transition: all 1.5s linear;position: absolute;opacity: 0.8;}
+			   .boxpic:hover .iconfont1{left:165px;opacity: 0.9;}
+			    .word{display: block;width: 90px;height: 105px;float: left;text-align: center;font-size: 28px;margin-right: 8px;margin-top: 15px;}
+			    .icon{width: 70px;height: 85px;}
+			
+		</style>
+	</head>
+	<body>
+		<div class="boxpic">
+			<img src="../前端学习/前端系统知识/image/xmad_15553962556499_GTdME (1).jpg">
+			<p class="shadow"></p>
+			<div class="iconfont1">
+		          <span class="word"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-money"></use></svg>付款</span>
+		          <span class="word"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cart"></use></svg>购物车</span>
+		          <span class="word"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-call"></use></svg>电话</span>
+		          <span class="word"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shop"></use></svg>商城</span>
+		          <span class="word"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-scan-barcode"></use></svg>扫一扫</span>
+		          <span class="word"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-round-help"></use></svg>帮助</span>
+		    </div>
+		</div>
+	</body>
+	<script src="../前端学习/前端系统知识/js/iconfont.js"></script>
+</html>
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			
+			.box1_2{position: relative;width: 1130px;height:330px;border: 1px gainsboro solid;background-color: #F6E9C6;}/*position: relative;放在此处*/
+			.mix_yemain{width: 1130px;height:330px;border: 1px gainsboro solid;overflow: hidden;} /*overflow: hidden;一定要放在此处*/
+			#qiehuanyemian{width: 1130px;height:330px;border: 1px gainsboro solid;padding: 10px;}
+			.lastbox1{width: 1130px;height:300px;border: 1px gainsboro solid;padding: 10px;}
+			#qiehuan{width: 1130px;height:330px;border: 1px gainsboro solid;padding: 10px;}
+			
+			  .lastbox_1{width: 240px;height: 300px;float: left;margin: 10px;}
+			  .lastbox_1:nth-of-type(1){margin-left: 35px;}
+			  .lastbox_1:nth-of-type(4){margin-right: 30px;}
+		      .lastbox_1 img{width:250px;height:200px;}
+		         .lastbox_1 span{display:block;width:250px;height:90px;background-color: #F45372;font-size: 26px;color: white;text-align: center;}
+			      .lastbox_1 a{ display: block;width:150px;height:30px;text-align: center;background-color: white;color:#F45372;border-radius: 15px;
+			                margin:10px auto;text-decoration: none;font-size: 22px;}
+		   
+		    .word{width: 50px;height: 50px;float: left;text-align: center;font-size: 20px;margin-right: 3px;position: absolute;top: 125px;}
+		      .word .icon{width:40px;height: 40px;}
+		    
+		     .word_2{width: 50px;height: 50px;float: left;text-align: center;font-size: 20px;margin-right: 3px;position: absolute;top: 125px;left: 980px;}
+		      .word_2 .icon{width:40px;height: 40px;}
+		    
+		    
+		
+		</style>
+	</head>
+	<body>
+	<div class="box1_2">
+		
+		<div class="mix_yemain"> 
+		   <div class="lastbox1"><!--显示出来的页面-->
+			   
+				   <div class="lastbox_1"><img src="image/0000000000000000000139823854.jpg"><span>汽车用品<a>满99减50</a></span></div>
+			       <div class="lastbox_1"><img src="image/0000000000000000000167198682.jpg"><span>汽车用品<a>满99减50</a></span></div>
+			       <div class="lastbox_1"><img src="image/0000000000000000000181645702.jpg"><span>汽车用品<a>满99减50</a></span></div>
+			       <div class="lastbox_1"><img src="image/0000000000000000000822846592.jpg"><span>汽车用品<a>满99减50</a></span></div>
+						
+		    </div>
+		    
+		    <div class="lastbox1" id="qiehuanyemian"><!--被隐藏的页面-->
+			       
+			       <div class="lastbox_1"><img src="image/0000000000000000010018129575.jpg"><span>汽车用品<a>满99减50</a></span></div>
+			       <div class="lastbox_1"><img src="image/0000000000000000010600760072.jpg"><span>汽车用品<a>满99减50</a></span></div>
+			       <div class="lastbox_1"><img src="image/0000000000000000010809432368.jpg"><span>汽车用品<a>满99减50</a></span></div>
+			       <div class="lastbox_1"><img src="image/0000000000000000010834802484.jpg"><span>汽车用品<a>满99减50</a></span></div>
+						
+		      
+		    </div
+		    
+		    <div class="lastbox1" id="qiehuan"><!--被隐藏的页面-->
+			       
+			       <div class="lastbox_1"><img src="image/100264653155334686picH_1.jpg"><span>汽车用品<a>满99减50</a></span></div>
+			       <div class="lastbox_1"><img src="image/0000000000000000000101822309.jpg"><span>汽车用品<a>满99减50</a></span></div>
+			       <div class="lastbox_1"><img src="image/0000000000000000010809432368.jpg"><span>汽车用品<a>满99减50</a></span></div>
+			       <div class="lastbox_1"><img src="image/0000000000000000010834802484.jpg"><span>汽车用品<a>满99减50</a></span></div>
+						
+		      
+		    </div>
+		    
+		</div>
+		
+		<span class="word"><a href="#qiehuanyemian"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-left"></use></svg></a></span>
+		
+		<span class="word_2"><a href="#qiehuan"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-right"></use></svg></a></span>
+		
+		
+		
+	</div>	
+		
+	</body>
+	<script src="js/iconfont.js"></script>
+</html>

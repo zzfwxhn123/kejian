@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			.box1{width:1200px;height: 500px;border: 1px black solid;position: relative;margin: 80px auto;}
+			  .backgroundpic{width:1200px;height: 500px;border: 1px black solid; overflow: hidden;}
+			                     /*overflow: hidden;此处一定要放在这里*/
+			    .backgroundpic #pic1{width:1200px;height: 500px;}
+			    .backgroundpic #pic2{width:1200px;height: 500px;}
+			    .backgroundpic #pic3{width:1200px;height: 500px;}
+			    .backgroundpic #pic4{width:1200px;height: 500px;}
+			   
+			   .box1 ul{position: absolute;right: 400px;bottom: 10px;}
+			              /*相对于父元素的绝对定位,让li可以出现在父元素上  此处ul不必设置宽高*/
+			    .box1 ul li{width: 80px; height: 40px;background:rgba(0,0,0,0.5);margin: 3px;float: left;list-style: none;
+			                 line-height: 35px;text-align: center;}
+			                 /*li采用透明度,所以不用设置背景颜色*/
+			   .box1 ul li:hover{background:rgba(0,0,0,0.8);}/*rgba最后一个的意思是透明度*/
+			   .box1 ul li a { display: block; width: 80px; height: 40px; color: white;text-decoration: none;font-size: 22px;} /*此处的a千万前面不能加.*/  
+			    
+		</style>
+	</head>
+	<body>
+		<div class="head1"></div>
+		<div class="head2"></div>
+		<div class="box1">
+			<div class="backgroundpic">
+				<img src="../image/xmad_15586250644634_HFCOv.jpg"id="pic1">
+				<img src="../image/xmad_15476942090876_owaIH.jpg"id="pic2">
+				<img src="../image/xmad_15531616186528_UuyIn.jpg"id="pic3">
+				<img src="../image/xmad_15548066625675_jhzWS.jpg"id="pic4">
+			</div>
+			
+			<ul>
+				<li class="button"><a href="#pic1">1</a></li>
+				<li class="button"><a href="#pic2">2</a></li>
+				<li class="button"><a href="#pic3">3</a></li>
+				<li class="button"><a href="#pic4">4</a></li>
+				
+			</ul>	
+				
+		</div>		
+				
+				
+				
+			
+			<div class="float_right" ></div>
+			<div class="float_left"></div>
+			
+			
+			
+			
+			
+			
+			
+			
+		
+	</body>
+</html>

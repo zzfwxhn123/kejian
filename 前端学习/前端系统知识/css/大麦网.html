@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.head1{background-color:white;}
+			  .div_center{width: 1200px;margin: 0 auto;}
+			    .a{display: inline-block;line-height: 35px; vertical-align: top;color: black;}
+			      .a ul{ list-style-type: none;}
+			      .a img{margin-right: 20px;}
+			      .a li{ display: inline-block; height: 40px; width: 70px;}
+			      .a li:hover{color: blue;}
+			       .a li:nth-of-type(1){width: 200px;margin-right: 15px;}
+			       .a li:nth-of-type(7){width: 200px;margin-left:140px;}
+			       
+			.backpic{width:1200px;height: 300px;border: 1px black solid;position: relative;margin:  auto;display: flex;}
+			  .backgroundpic{width:1200px;height: 300px;border: 1px black solid; overflow: hidden;}
+			                     /*overflow: hidden;此处一定要放在这里*/
+			    .backgroundpic #pic1{width:1200px;height: 300px;}
+			    .backgroundpic #pic2{width:1200px;height: 300px;}
+			    .backgroundpic #pic3{width:1200px;height: 300px;}
+			    .backgroundpic #pic4{width:1200px;height: 300px;}
+			   
+			   .backpic ul{position: absolute;right: 500px;bottom: 0;}
+			              /*相对于父元素的绝对定位,让li可以出现在父元素上  此处ul不必设置宽高*/
+			    .backpic ul li{width: 50px; height: 30px;background:rgba(0,0,0,0.5);margin-left:5px;float: left;list-style: none;
+			                 line-height: 35px;text-align: center;}
+			                 /*li采用透明度,所以不用设置背景颜色*/
+			   .backpic ul li:hover{background:rgba(0,0,0,0.8);}/*rgba最后一个的意思是透明度*/
+			   .backpic ul li a {  color: white;text-decoration: none;font-size: 20px;} /*此处的a千万前面不能加.*/  
+			
+			.iconfont_pic{width: 100%;height: 100px;margin-top: 10px;}
+			.iconfont_pic ul{float: left;list-style: none;margin-left: 30px;}
+			 .iconfont_pic  ul li{background-color: whitesmoke;width: 140px;height: 100px;float: left;
+			                         transition: all 0.5s;position: relative;z-index: 999px;}
+	
+			 .iconfont_pic ul li:hover{transform: scale(1.05);background-color: gray;}
+			   .iconfont_pic .icon{ width: 50px; height: 50px;top:10px;left: 50px;position: absolute;text-align: center;}
+			  .iconfont_pic ul li a{display: block;height:50px;font-size: 20px;color: black;
+			                   text-align: center;text-decoration: none;line-height: 30px;}    
+			.middlebox{width: 1250px; height: 480px;float: left;margin: 40px auto;margin-left: 80px;box-shadow: 10px 10px 15px;}
+			.middlebox .box1{ width: 300px; height: 400px;float: left;border: 1px black solid;}
+			.middlebox .box2{ width: 930px; height: 400px; float: left;border: 1px black solid;}
+			 
+		      #p{width: 100%;height: 200px; background-color:antiquewhite;border: 1px black solid;}
+			
+	          #p .p1{
+	          	overflow: hidden;
+				width: 295px;height: 185px;/**/
+				border: 1px solid darkcyan;/*右边框 1一像素 虚线 棕色*/
+				float: left;
+				text-align: center;
+				font-size: 20px;
+				font-family: "楷体";
+				color: #844813;
+				margin: 5px;
+				background-color: cadetblue;
+			         }
+		      #p .p1.last{
+			    padding-right: 0;/*取消右填充*/
+				/*取消边框*/
+		        }  
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      .middlebox3{width: 1250px; height: 480px;float: left;margin: 40px auto;margin-left: 80px;box-shadow: 10px 10px 15px;}
+			.middlebox3 .box1{ width: 300px; height: 400px;float: left;border: 1px black solid;position: relative;overflow: hidden;}
+			   .shadow{width: 300px;height: 400px;position: absolute;top:-2px;background-color: whitesmoke;
+			                  opacity: 0; transition: all 1.5s;}
+			.middlebox3 .box1:hover .shadow{opacity: 0.9;}
+			.middlebox3 .box1 img:nth-of-type(2){width: 150px;height: 70px;left: -150px;top:-70px;position: absolute;transition: all 1.5s;}
+			.middlebox3 .box1:hover img:nth-of-type(2){left: 80px; top:50px;}
+			.middlebox3 .box1 img:nth-of-type(3){width: 150px;height: 150px;left: -150px;top:-150px;position: absolute;transition: all 1.5s;}
+			.middlebox3 .box1:hover img:nth-of-type(3){left: 80px; top:170px;}
+			
+			.middlebox3 .box2{ width: 930px; height: 400px; float: left;border: 1px black solid;}
+			 
+		      #p{width: 100%;height: 200px; background-color:;border: 1px black solid;}
+			
+	          #p .p1{
+	          	overflow: hidden;
+				width: 295px;height: 185px;/**/
+				border: 1px solid darkcyan;/*右边框 1一像素 虚线 棕色*/
+				float: left;
+				text-align: center;
+				font-size: 20px;
+				font-family: "楷体";
+				color: #844813;
+				margin: 5px;
+				background-color: #B6BBD8;
+			         }
+		      #p .p1.last{
+			    padding-right: 0;/*取消右填充*/
+				/*取消边框*/
+		        }                   
+			    
+			   </style>
+	</head>
+	<body>
+		<div class="head1">
+			<div class="div_center">
+				
+				<div class="a">
+					<ul>
+						<li><img src="../image/TB1otMASmzqK1RjSZPxXXc4tVXa-167-60.png"width="130px"height="50px"/>全国</li>
+						<li>首页</li>
+						<li>分类</li>
+						<li>登陆</li>
+						<li>下载</li>
+						<li>Eglish</li>
+						<li><span><input type="text" style="width: 200px;height: 40px;text-align: left;margin-top: 15px;margin-right:15px ;"></span></li>
+						<li><a href="#"><input type="button" value="登录"style="inline-block; width: 120px;height:40px;text-align: center;top:30px;margin-left:15px;
+			                   line-height: 35px;border-radius: 30px; border: 1px black solid;margin-top: 17px;font-size: 18px;background-color: #FCB98D;"></span></li>
+						
+					</ul>
+				</div>
+				
+			</div>	
+		</div>
+		
+		<div class="backpic">
+			<div class="backgroundpic">
+				<img src="../image/TB1U5hJUNTpK1RjSZFKSuu2wXXa.jpg"id="pic1">
+				<img src="../image/carousel_3.png"id="pic2">
+				<img src="../image/carousel_1.jpg"id="pic3">
+				<img src="../image/carousel_2.jpg"id="pic4">
+			</div>
+			
+			<ul>
+				<li class="button"><a href="#pic1">1</a></li>
+				<li class="button"><a href="#pic2">2</a></li>
+				<li class="button"><a href="#pic3">3</a></li>
+				<li class="button"><a href="#pic4">4</a></li>
+			</ul>
+		</div>
+		
+		<div class="iconfont_pic">
+			<ul>
+				<li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kcb_hangyeicon-5"></use></svg><br><br><br><a href="#">演唱会</a></li>
+				<li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kcb_hangyeicon-7"></use></svg><br><br><br><a href="#">话剧歌剧</a></li>
+				<li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kcb_hangyeicon-8"></use></svg><br><br><br><a href="#">体育</a></li>
+				<li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kcb_hangyeicon_huaban"></use></svg><br><br><br><a href="#">儿童亲子</a></li>
+				<li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kcb_hangyeicon-16"></use></svg><br><br><br><a href="#">展览休闲</a></li>
+				<li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kcb_hangyeicon-18"></use></svg><br><br><br><a href="#">音乐会</a></li>
+				<li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kcb_hangyeicon-6"></use></svg><br><br><br><a href="#">曲苑杂坛</a></li>
+				<li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kcb_hangyeicon-19"></use></svg><br><br><br><a href="#">舞蹈芭蕾</a></li>
+				<li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kcb_hangyeicon-20"></use></svg><br><br><br><a href="#">二次元</a></li>
+			</ul>
+		</div>
+		<div class="middlebox">
+			<h2 style="text-align: left;margin-left: 20px;">话剧歌剧</h2>
+			<div class="box1">
+				<img src="../image/160037_n.jpg"style="width: 300px;height: 400px;">
+			</div>
+		     	
+		     
+		     <div  class="box2">
+			      <div id="p">
+			           <div class= "p1" style="background-color: blanchedalmond;">
+				          <img src="../image/141331_n.jpg"align="left" width="150px" height="180px" >
+				            <br><a style="text-align: left;">林宥嘉<br>巡回演唱会</a><br>
+				    	       <a style="font-size: 18px;line-height: 35px;">凯迪拉克中心<br>2019.7.13号</a><a style="font-size: 23px; color: red;"><br>$990元起</a>
+			           </div>
+			           <div class= "p1">
+			           
+				           <img src="../image/154901_n.jpg" align="left" width="150px" height="180px" >
+				           <br><br><a style="text-align: center;"></a>
+				 
+			           </div>
+			           <div class= "p1">
+			           
+				            <img src="../image/158083_n.jpg" align="left" width="150px" height="180px" >
+				            <br><br><a style="text-align: center;"></a>
+					   </div>
+			
+	             </div>
+			 
+			      	<div id="p">
+			           <div class= "p1">
+			           	    
+				          <img src="../image/159085_n.jpg"align="left" width="150px" height="180px" >
+				            <br><br><a style="text-align: center;">Connive</a><br>
+				    	       <a></a>
+				    
+			           </div>
+			           <div class= "p1">
+			           	    
+				           <img src="../image/159153_n.jpg"align="left" width="150px" height="180px" >
+				           <br><br><a style="text-align: center;"></a>
+				 
+			           </div>
+			           <div class= "p1">
+				           
+				           <img src="../image/159437_n.jpg"align="left" width="150px" height="180px" >
+				            <br><br><a style="text-align: center;"></a>
+					   </div>
+			
+	              </div>
+			
+		     </div>
+		</div>
+		
+		<div class="middlebox">
+			<h2 style="text-align: left;margin-left: 20px;">话剧表演</h2>
+			<div class="box1">
+				<img src="../image/160037_n.jpg"style="width: 300px;height: 400px;">
+			</div>
+		     	
+		     
+		     <div  class="box2">
+			      <div id="p">
+			           <div class= "p1">
+				          <img src="../image/141331_n.jpg"align="left" width="150px" height="180px" >
+				            <br><a style="text-align: left;">林宥嘉<br>巡回演唱会</a><br>
+				    	       <a style="font-size: 18px;line-height: 35px;">凯迪拉克中心<br>2019.7.13号</a><a style="font-size: 23px; color: red;">$990元起</a>
+			           </div>
+			           <div class= "p1">
+			           
+				           <img src="../image/154901_n.jpg" align="left" width="150px" height="180px" >
+				           <br><br><a style="text-align: center;"></a>
+				 
+			           </div>
+			           <div class= "p1">
+			           
+				            <img src="../image/158083_n.jpg" align="left" width="150px" height="180px" >
+				            <br><br><a style="text-align: center;"></a>
+					   </div>
+			
+	             </div>
+			 
+			      	<div id="p">
+			           <div class= "p1">
+			           	    
+				          <img src="../image/159085_n.jpg"align="left" width="150px" height="180px" >
+				            <br><br><a style="text-align: center;">Connive</a><br>
+				    	       <a></a>
+				    
+			           </div>
+			           <div class= "p1">
+			           	    
+				           <img src="../image/159153_n.jpg"align="left" width="150px" height="180px" >
+				           <br><br><a style="text-align: center;"></a>
+				 
+			           </div>
+			           <div class= "p1">
+				           
+				           <img src="../image/159437_n.jpg"align="left" width="150px" height="180px" >
+				            <br><br><a style="text-align: center;"></a>
+					   </div>
+			
+	              </div>
+			
+		     </div>
+		</div>
+		
+		<div class="middlebox3">
+			<h2 style="text-align: left;margin-left: 20px;">儿童亲子</h2>
+			<div class="box1">
+				<img src="../image/160037_n.jpg"style="width: 300px;height: 400px;">
+				
+				<div class="shadow"></div>
+				<img src="../image/TB1otMASmzqK1RjSZPxXXc4tVXa-167-60.png">
+				<img src="../image/TB1TBEJSkvoK1RjSZFNXXcxMVXa-280-280.jpg">
+			</div>
+		     	
+		     
+		     <div  class="box2">
+			      <div id="p">
+			           <div class= "p1">
+				          <img src="../image/141331_n.jpg"align="left" width="150px" height="180px" >
+				            <br><a style="text-align: left;">林宥嘉<br>巡回演唱会</a><br>
+				    	       <a style="font-size: 18px;line-height: 35px;">凯迪拉克中心<br>2019.7.13号</a><a style="font-size: 23px; color: red;">$990元起</a>
+			           </div>
+			           <div class= "p1">
+			           
+				           <img src="../image/154901_n.jpg" align="left" width="150px" height="180px" >
+				           <br><br><a style="text-align: center;"></a>
+				 
+			           </div>
+			           <div class= "p1">
+			           
+				            <img src="../image/158083_n.jpg" align="left" width="150px" height="180px" >
+				            <br><br><a style="text-align: center;"></a>
+					   </div>
+			
+	             </div>
+			 
+			      	<div id="p">
+			           <div class= "p1">
+			           	    
+				          <img src="../image/159085_n.jpg"align="left" width="150px" height="180px" >
+				            <br><br><a style="text-align: center;">Connive</a><br>
+				    	       <a></a>
+				    
+			           </div>
+			           <div class= "p1">
+			           	    
+				           <img src="../image/159153_n.jpg"align="left" width="150px" height="180px" >
+				           <br><br><a style="text-align: center;"></a>
+				 
+			           </div>
+			           <div class= "p1">
+				           
+				           <img src="../image/159437_n.jpg"align="left" width="150px" height="180px" >
+				            <br><br><a style="text-align: center;"></a>
+					   </div>
+			
+	              </div>
+			
+		     </div>
+		</div>
+		
+		
+	</body>
+	<script src="../js/iconfont.js"></script>
+</html>

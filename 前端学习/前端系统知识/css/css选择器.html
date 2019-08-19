@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>属性选择器</title>
+	<style type="text/css">
+		.div{width: 100%;min-height: 200px;}
+            img[class$="b"]{   border: 15px aquamarine dashed;}/*选取属性值中以指定值结尾的每个元素 优先级3*/
+            img[class*="b"]{   border: 15px brown dashed;}	/*匹配属性值中包含指定值的元素 优先级2*/
+            img[class^="b"]{   border: 15px navy solid;}	/*匹配属性值中以指定值开头的元素  优先级1*/
+	    
+	    .nav1 li:first-child{ background-color: aquamarine; }
+	    .nav1 li:last-child{ background-color: yellowgreen; }
+	    .nav1 li:nth-child(3){background-color: antiquewhite;}/*选定3-1个元素*/
+	    .nav1 li:nth-last-child(2){background-color:lightcoral ;}/*选定倒数第二个元素*/
+	    .nav1 li:nth-child(2n+1){background-color:red;}/*选定2n+1个元素*/
+	
+	</style>
+	</head>
+	<body>
+		<div>
+			<h2>属性选择器</h2>
+		<!--img[alt]{ width: 20px border: 10px navajowhite dashed;}	
+	        img[title]{ width: 20px border: 10px navajowhite solid;}
+		<img src="img/O1CN011VuazcHkGg6OlFE_!!2838892713.png" alt="手机"/>*/
+		<img src="img/O1CN011Vub06g75dewsnX_!!2838892713.png" title="智能设备"/>
+		    属性选择器 选择带有指定的元素属性-->
+		  <img src="img/O1CN01CwfjTe1Vub2JuvHsQ_!!2838892713.png" class="abc"/>
+		  <img src="img/O1CN01fP2f741Vub1XLBB3Y_!!2838892713.png" class="acb"/>
+		  <img src="img/O1CN01MP50f61Vub1gCe6KY_!!2838892713.png" class="bca"/>
+		</div>
+		<ul class="nav1">
+		 	<h2>伪类选择器</h2>
+		 	<li>项目1</li>
+		 	<li>项目2</li>
+		 	<li>项目3</li>
+		 	<li>项目4</li>
+		 	<li>项目5</li>
+		 	<li>项目6</li>
+		 	<li>项目7</li>
+		 	<li>项目8</li>
+		 	<li>项目9</li>
+		 	
+		 	
+		 	
+		 	
+		 </ul>   
+		    
+	</body>
+</html>

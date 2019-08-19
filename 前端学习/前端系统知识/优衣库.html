@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			.head{width: 1200px;height: 60px;margin: 30px auto;border: 1px #AC5E11 solid;border-radius: 9px;}
+			.head ul {list-style: none;}
+			.head ul li{width:100px;height: 60px;float: left;text-align: center;transition: all 1s linear;}
+			.head ul li:hover{background-color: #A1A1A1;transform: scale(1.05);}
+			.head ul li a{text-decoration: none;font-size: 20px;color: black;line-height: 55px;}
+			.head ul li a:hover{color: brown;}
+			.head ul li:nth-of-type(5){width: 393px;transition: none;transform: none;}
+			.head ul li:nth-of-type(6){width: 135px;background-color: #666666;background: rgba(0,0,0,0.3);}
+			.head ul li:nth-of-type(7){width: 135px;background-color: #666666;background: rgba(0,0,0,0.5);}
+			.head ul li:nth-of-type(8){width: 135px;background-color: #3C3C3C;background: rgba(0,0,0,0.7);}
+			.cieclepic{width: 1200px;height: 500px;margin: 40px auto;border: 1px grey solid;}
+			.cieclepic img{width: 1200px;height: 500px;position: relative;}
+			
+			
+			.listbox{width: 1200px;height: 700px;border: 1px grey solid;position: relative;margin-left: 115px;box-shadow:10px 10px 10px ;margin-top: 15px;}
+			.listbox ul{list-style: none;margin: 20px;margin-top: 10px;}
+			.listbox ul li{width:280px;height: 60px;border: 1px grey solid;float: left;text-align: center;transition: all 0.5s linear;}
+			.listbox ul li:hover{border-bottom: 4px #378694 solid;}
+			.listbox ul li a{text-decoration: none;font-size: 20px;color: black;line-height: 65px;font-weight: bolder;}
+			.listbox ul li a:hover{color: brown;}
+			.listbox .droppic{width: 1200px;height: 500px;overflow: hidden;}
+			.listbox .droppic img{width: 1200px;height: 500px;margin-top: 20px;}
+			
+			.lastbox{width: 1200px;height: 700px;border: 1px grey solid;position: relative;margin-left: 115px;overflow: hidden;margin-top: 20px;box-shadow:8px 8px 8px ;}
+			.lastbox .shadow{width: 1200px;height: 600px;margin-top: 20px;position: absolute;background-color: grey; top: -20px;opacity: 0;transition: all 1s linear;}
+			.lastbox:hover .shadow{opacity: 0.5;}
+			 .lastbox img:nth-of-type(1){width: 1200px;height: 500px;margin-top: 20px;position: absolute;}
+			 .lastbox img:nth-of-type(2){width: 500px;height: 500px;top:70px;left: -500px;transition: all 1.5s linear; position: absolute;}
+			 .lastbox:hover img:nth-of-type(2){left: 50px;}
+			 .lastbox img:nth-of-type(3){width: 500px;height: 500px;top: 70px;right: -500px;transition: all 1.5s linear;position: absolute;}
+			 .lastbox:hover img:nth-of-type(3){right: 50px;}
+			.lastbox h2{ font-size:28px;color:black;top:-35px;text-align: center;position: absolute;transition: all 1.5s;margin-left:550px ;}
+			  .lastbox:hover h2{top:20px;}
+			  
+			.buttoom{width: 1200px;height: 750px;border: 1px grey solid;position: relative;margin-left: 115px;overflow: hidden;margin-top: 20px;box-shadow:6px 6px 6px ;}
+			.buttoom .shadow{width: 1200px;height: 750px;margin-top: 20px;position: absolute;background-color: grey; top: -20px;opacity: 0;transition: all 1s linear;}
+			.buttoom:hover .shadow{opacity: 0.5;}
+			 .buttoom img:nth-of-type(1){width: 1200px;height: 700px;margin-top: 20px;position: absolute;}
+			 .buttoom img:nth-of-type(2){width: 1200px;height: 700px;top:-700px;transition: all 1.5s linear; position: absolute;}
+			 .buttoom:hover img:nth-of-type(2){top: 80px;}
+			 .buttoom img:nth-of-type(3){width: 1200px;height: 500px;top:-500px;transition-delay: 10s;transition:10s linear; position: absolute;}
+			 .buttoom:hover img:nth-of-type(3){top: 80px;}
+			 
+			
+			.stiky{position: fixed;z-index: 888;width:85%;height: 10%;text-align: center;margin-top: 46%;margin-left: 150px}/*此处是整个页面的固定条*/
+			.stiky ul{list-style: none;margin: 20px;margin-top: 10px;}
+			.stiky ul li{width:20%;height: 60px;border: 1px grey solid;float: left;text-align: center;transition: all 0.5s linear;background-color: red;}
+			.stiky ul li:hover{border-bottom: 4px #378694 solid;}
+			.stiky ul li a{text-decoration: none;font-size: 20px;color: black;line-height: 65px;font-weight: bolder;}
+			.stiky ul li a:hover{color: brown;}
+			
+		</style>
+	</head>
+	<body>
+		<div class="head">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">女装</a></li>
+				<li><a href="#">男装</a></li>
+				<li><a href="#">童装</a></li>
+				<li><input type="text" style="width: 220px;height: 40px;margin: 7px;"><input type="submit"value="登录"style="width: 60px;height: 40px;background-color: #79ABE0;"</li>
+				<li><a href="#">公告区</a></li>
+				<li><a href="#">电子信息</a></li>
+				<li><a href="#">购物须知</a></li>
+				
+			</ul>
+		</div>
+		
+		<div class="stiky"><!--固定在整个页面上显示-->
+			<ul>
+				<li><a>优惠商品</a></li>
+				<li><a>折扣热点</a></li>
+				<li><a>儿童服装</a></li>
+				<li><a>夏装上新</a></li>
+			</ul>
+		</div>
+		
+		
+		<div class="cieclepic">
+			<img src="image/O1CN01iNK1Wa1ewH3IavB6c_!!196993935.jpg"id="beta">
+			
+		</div>
+		
+		<div class="listbox">
+			<h1 style="margin-left: 100px;line-height: 80px;">本周推荐</h1>
+			<ul>
+				<li><a href="#pic1">WOMEN</a></li>
+				<li><a href="#pic2">MEN</a></li>
+				<li><a href="#pic3">KIDS</a></li>
+				<li><a href="#pic4">BABY</a></li>
+			</ul>
+			<div class="droppic">
+				<img src="image/O1CN01t47rol1ewH3Hi3Pmk_!!196993935.jpg"id="pic1">
+				<img src="image/O1CN018EqZuU1ewH3FwKjp3_!!196993935.jpg"id="pic2">
+				<img src="image/O1CN01ATSlCw1ewH3GBjapG_!!196993935.jpg"id="pic3">
+				<img src="image/O1CN01B6v7I11ewH3IOlwmi_!!196993935.jpg"id="pic4">
+			</div>	
+		</div>
+		
+		<div class="listbox">
+			<h1 style="margin-left: 100px;line-height: 80px;">本周推荐</h1>
+			<ul>
+				<li><a href="#pic5">WOMEN</a></li>
+				<li><a href="#pic6">MEN</a></li>
+				<li><a href="#pic7">KIDS</a></li>
+				<li><a href="#pic8">BABY</a></li>
+			</ul>
+			<div class="droppic">
+				<img src="image/O1CN01uyCKgv1ewH3JjLtTt_!!196993935.jpg"id="pic5">
+				<img src="image/O1CN018EqZuU1ewH3FwKjp3_!!196993935.jpg"id="pic6">
+				<img src="image/O1CN01ATSlCw1ewH3GBjapG_!!196993935.jpg"id="pic7">
+				<img src="image/O1CN01B6v7I11ewH3IOlwmi_!!196993935.jpg"id="pic8">
+			</div>	
+		</div>
+		
+		<div class="lastbox">
+			<h1 style="margin-left: 100px;line-height: 80px;">限时折扣</h1>
+			<img src="image/O1CN01abN2M41ewH3JLkgyX_!!196993935.jpg">
+			<p class="shadow"></p>
+			<img src="image/O1CN01iIDBhu1ewH3JjL5cW_!!196993935.jpg" />
+			<img src="image/O1CN01X5QitW1ewH3FFC5zV_!!196993935.jpg" />
+			<h2>欢迎光临</h1>
+			
+			
+			
+		</div>
+		
+		<div class="buttoom">
+			<h1 style="margin-left: 100px;line-height: 80px;">热门商品分类</h1>
+			<img src="image/O1CN01FrebPR1ewH2U52g9E_!!196993935.jpg">
+			<p class="shadow"></p>
+			<img src="image/O1CN01A5Sqpk1ewH2zWyf2S_!!196993935.jpg" />
+			<img src="image/O1CN019vLVjd1ewH3FFAYMx_!!196993935 (1).jpg" />
+		</div>
+		
+		
+		
+		
+		
+	</body>
+	<script>
+    //使用数组保存图片的地址
+    var imgs=["image/O1CN01ztpxQE1ewH3JsbMAR_!!196993935.jpg","image/O1CN014BHgV31ewH34bnkM9_!!196993935.jpg",
+              "image/O1CN01xgAhSc1ewH3H4DWd8_!!196993935.jpg","image/O1CN01OkIr9Q1ewH2alhycm_!!196993935.jpg"];
+    var index=0;
+    function qiehuan()
+    {
+        document.getElementById("beta").src=imgs[index];
+        index++;
+        if(index > 5){
+            index=0;
+                     }
+    }
+    setInterval("qiehuan()",4000);
+    </script>
+</html>

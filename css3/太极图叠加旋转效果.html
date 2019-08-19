@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			  .box{width: 300px;height: 300px;background-color: white;margin: 100px;position: relative;animation: move 1.5s infinite linear;}
+			           /*父元素使用相对定位,其他子元素使用绝对定位,就能将子元素放到父元素中*/
+			      .boxblack{width: 300px;height: 300px;background-color: black;border-radius: 50%;}
+			      .boxwhite{width: 150px;height: 300px;background: white;border-top-right-radius: 150px;border-bottom-right-radius: 150px;right:0;top:0;position: absolute;}
+			      /*border-top-right-radius: 150px;先写上下再写左右就表示要切掉哪个角*/
+			        .boxblack_1{width:150px;height: 150px;background: white;left: 75px;top: 0;position: absolute;border-radius: 50%;}
+			        .boxwhite_1{width:150px;height: 150px;background: black;left: 75px;top: 150px;position: absolute;border-radius: 50%;}
+			          .boxbbb{width: 35px;height: 35px;background: black;left: 130px;top:50px;position: absolute;border-radius: 50%;}
+			          .boxwww{width: 35px;height: 35px;background: white;left: 130px;top:200px;position: absolute;border-radius: 50%;}
+			 @keyframes move{
+			  	from{transform: rotate(0deg);}/*表示运动的轨迹,调用放在父元素中*/
+			  	to{transform: rotate(360deg);}
+			  }
+		</style>
+	</head>
+	<body>
+		<div class="box">
+		<div class="boxblack"></div>
+		<div class="boxwhite"></div>
+		<div class="boxblack_1"></div>
+		<div class="boxwhite_1"></div>
+		<div class="boxbbb"></div>
+		<div class="boxwww"></div>
+		</div>
+		实际操作过程：<br>
+		1.先设置大的黑色方框，设置边框圆形样式<br>
+		2.再设置只有黑色方框一般大小的白色方框 将白色方框的右上角以及右下角通过边框设置裁剪成为圆形，通过绝相对于父容器的绝对定位放置到父容器上面<br>
+		3.然后设置一个黑色和白色小圆，通过定位以及对top right left bottom的设置把自己放置到父容器中<br>
+		4.设置最小的圆，通过同样的方法设置<br>
+		5.设置动画效果@keyframes move{from{transform: rotate(0deg);}/*表示运动的轨迹,调用放在父元素中*/to{transform: rotate(360deg);}}
+		   把这个放置到style中<br>
+		6.将animation: move 1.5s infinite linear;想要出现的效果放到整个父容器中
+		
+		
+	</body>
+</html>

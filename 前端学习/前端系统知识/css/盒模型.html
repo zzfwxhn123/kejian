@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;/*将所有的元素边距都设置为0
+				
+				      1. margin-top:10px 上边距
+				       right
+				       bottom
+				       left 
+				      2.padding: 上右下左 20px;内部填充*/
+			}
+			#box{
+				width: 750px;
+				overflow: auto;
+				margin: auto;/*1。让父元素自动设置边距，在左右边距相当，即可达到居中效果，水平方向有效
+				              
+				              *2.边框  dashed段状线/double双线 solid实线
+				              *3.可使用border-left:单独定义一个边
+				              * 
+				              * */
+				border-width:20px;border-color:darkcyan ;border-style: solid ;border-left: double red;
+			}
+			.item{
+				width: 400px;height: 400px;
+				float: left;/*左浮动*/
+			margin: 20px;/*间距为20px*/
+			}
+        </style>
+	</head>
+	<body>
+		<div id="box">
+			<div class="item" style="background: url(img/mmexport1535125463244.jpg);"></div>
+		    <div class="item" style="background: url(img/mmexport1535125452868.jpg);"></div>
+		    <div class="item" style="background: url(img/mmexport1535125456194.jpg);"></div>
+		</div>
+		
+	</body>
+</html>

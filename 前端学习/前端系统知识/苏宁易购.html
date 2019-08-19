@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}			
+			
+			 .box1_box2_box3{width: 1400px;height: 500px;border: 1px black solid;float: left;background-color: #FF1E45;}
+			 
+			   .listboxleft{width: 200px;height: 500px;border: 1px black solid;margin-left:90px;float: left;overflow: hidden;}
+			 
+			   .listboxleft ol{list-style: none;}
+			   .listboxleft ol li{width: 200px;height: 42px;background-color:black;text-align: center;}
+			   .listboxleft ol li:hover{background: rgba(0,0,0,0.8);background-color: whitesmoke;}
+			   .listboxleft ol li a{text-decoration: none;font-size: 18px;color: white;margin-right: 8px;line-height: 40px;}
+			  .listboxleft ol li:hover a{color: black;}
+			 
+			 
+			  
+			 
+			 
+			 
+			 .box2{width: 800px;height: 500px;border: 1px black solid;float: left;position: relative;} 
+			  .backgroundpic{width: 800px;height: 500px;border: 1px black solid;overflow: hidden;}/*此处不需要定位,只要溢出隐藏*/
+			     img{width: 800px;height: 500px;}
+			  .box2 ul{position: absolute;list-style: none;bottom: 160px;margin-left: 250px;} 
+			  .box2 ul li{width: 30px;height: 30px;margin-right: 40px;float: left;background: rgba(0,0,0,0.5);}
+			  .box2 ul li a{display: block;width: 30px;height: 30px;text-decoration: none;font-size: 18px;color: white;text-align: center;}
+			  .box2 ul li:hover {background: rgba(0,0,0,0.8);}
+			  
+			   .buttoom{width: 800px;height: 150px;top: 350px;position: absolute;overflow: hidden;}
+			  .buttoom_pic{width: 200px;height: 150px;float: left;transition: all 1.5s linear;}
+			    .buttoom_pic:hover{width: 300px;height: 150px;}
+			    
+			    .buttoom_pic img{width: 300px;height: 150px;}
+			  
+			.box3{width: 200px;height: 500px;border: 1px black solid;float: left;overflow: hidden;}
+			   .box3 ol{list-style: none;}
+			   .box3 ol li{width: 200px;height: 150px;background-color:white;text-align: center;}
+			   .box3 ol li:hover{background: rgba(0,0,0,0.8);background-color: whitesmoke;}
+			   .box3 ol li:nth-of-type(1){}
+			   .box3 ol li:nth-of-type(2){}
+			   .box3 ol li:nth-of-type(3){width: 200px;height: 200px;background-color:white;text-align: center;border: 1px gainsboro solid;padding-left: 2px;}
+			     .box3_1_1{width: 65px;height: 100px;float: left;transition: all 1.5s linear;padding-top: 5px;}
+			     .box3_1_1:hover{transform:scale(1.03);background: grey;opacity: 0.9;}
+			       .box3_1_1 a{font-size: 16px;color: black;text-decoration: none;}
+			       .box3_1_1  a:hover{color: red;}
+			       .box3_1_1 .icon{ width: 45px;height: 45px;text-align: center;}
+			
+			.middlebox{width: 1100px;height: 540px;border: 1px black solid;float: left;background-color: #C30025;margin-left:180px ;}       
+			.middlebox_1{margin: 10px;float: left;}
+			.middlebox_1:nth-of-type(1){margin-left: 20px;} 
+			.middlebox_1:nth-of-type(5){margin-left: 20px;}
+			.middlebox_1 span{display:block;width:250px;height:90px;background-color: #F45372;font-size: 26px;color: white;text-align: center;}
+			      .middlebox_1 a{ display: block;width:150px;height:30px;text-align: center;background-color: white;color:#F45372;border-radius: 15px;
+			                margin:10px auto;text-decoration: none;font-size: 22px;}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		</style>
+		
+	</head>
+	<body>
+		<div class="all">
+		<div class="head1"></div>
+		<div class="head2"></div>
+		<div class="box1_box2_box3">
+		
+			<div class="listboxleft">
+				<ol>
+				<li><a href="">手机</a><a href="">运营商</a><a href="">数码</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+				<li><a href="">5</a></li>
+                <li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+				<li><a href="">5</a></li>
+			   </ol>
+			</div>
+			
+			
+		
+		  <div class="box2">
+			 <div class="backgroundpic">
+				<img src="image/155920370113821514.jpg"id="pic1">
+				<img src="image/155911241291781219.jpg"id="pic2">
+				<img src="image/155929083278775281 (1).jpg"id="pic3">
+				<img src="image/155929641374119785 (1).jpg"id="pic4">
+				<img src="image/155929784833733382.jpg"id="pic5">
+			 </div>
+			 <ul>
+				<li><a href="#pic1">1</a></li>
+				<li><a href="#pic2">2</a></li>
+				<li><a href="#pic3">3</a></li>
+				<li><a href="#pic4">4</a></li>
+				<li><a href="#pic5">5</a></li>
+			 </ul>
+			 <div class="buttoom">
+				<div class="buttoom_pic"><img src="image/2a53edd6-ba18-4246-9d27-3d3258097a73.jpg"></div>
+				<div class="buttoom_pic"><img src="image/2e909613-cdaf-4810-a71a-5e865e97836b.jpg"></div>
+				<div class="buttoom_pic"><img src="image/300b5f3d-0cc9-46f0-adbf-6778edc53fef.jpg"></div>
+				<div class="buttoom_pic"><img src="image/912a70ad-c676-45df-bbf9-74d4202a2d72.jpg"></div>
+				
+			
+			 </div>
+		
+		   </div>	
+		
+		    <div class="box3">
+				<ol id="box3_1">
+				 <li><a href="">1</a></li>
+				 <li><a href="">2</a></li>
+				 <li>
+					   <span class="box3_1_1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kcb_hangyeicon-5"></use></svg><br><a href="#">演唱会</a></span>
+				       <span class="box3_1_1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kcb_hangyeicon-7"></use></svg><br><a href="#">话剧歌剧</a></span>
+				       <span class="box3_1_1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kcb_hangyeicon-8"></use></svg><br><a href="#">体育</a></span>
+				       <span class="box3_1_1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kcb_hangyeicon_huaban"></use></svg><br><a href="#">儿童亲子</a></span>
+				       <span class="box3_1_1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kcb_hangyeicon-16"></use></svg><br><a href="#">展览休闲</a></span>
+				       <span class="box3_1_1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kcb_hangyeicon-18"></use></svg><br><a href="#">音乐会</a></li>
+				 </li>
+			    </ol>
+	        </div>
+        </div>	
+			
+			<div class="middlepic"style="margin-left: 180px;"><img src="image/155929640596674147.png"style="width: 1100px;height: 150px;margin-top: 20px;"></div>
+			<div class="middlebox">
+				
+				<div class="middlebox_1"><img src="image/0000000000000000000124195122.jpg"style="width: 250px;height: 150px;"><span>汽车用品<a>满99减50</a></span></div>
+				<div class="middlebox_1"><img src="image/0000000000000000000124195122.jpg"style="width: 250px;height: 150px;"><span>汽车用品<a>满99减50</a></span></div>
+				<div class="middlebox_1"><img src="image/0000000000000000000124195122.jpg"style="width: 250px;height: 150px;"><span>汽车用品<a>满99减50</a></span></div>
+				<div class="middlebox_1"><img src="image/0000000000000000000124195122.jpg"style="width: 250px;height: 150px;"><span>汽车用品<a>满99减50</a></span></div>
+				<div class="middlebox_1"><img src="image/0000000000000000000124195122.jpg"style="width: 250px;height: 150px;"><span>汽车用品<a>满99减50</a></span></div>
+				<div class="middlebox_1"><img src="image/0000000000000000000124195122.jpg"style="width: 250px;height: 150px;"><span>汽车用品<a>满99减50</a></span></div>
+				<div class="middlebox_1"><img src="image/0000000000000000000124195122.jpg"style="width: 250px;height: 150px;"><span>汽车用品<a>满99减50</a></span></div>
+				<div class="middlebox_1"><img src="image/0000000000000000000124195122.jpg"style="width: 250px;height: 150px;"><span>汽车用品<a>满99减50</a></span></div>
+	
+			</div>
+			
+	
+</div>			
+		
+		
+		
+		
+		
+		
+	
+		
+		
+	</body>
+	<script src="js/iconfont.js"></script>
+</html>

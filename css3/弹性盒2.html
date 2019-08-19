@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box1{width:100%;height: 100px;border:1px solid cadetblue;margin-top: 40px;}
+			.box1 ul{list-style: none;display: flex;}/*display: flex;可以将整个元素设为浮动，但是位置默认放置于中间*/
+			.box1 ul li{width: 60px;height:40px;border: 1px solid cadetblue;}
+			
+			.box2{width:600px;height: 100px;border:1px solid cadetblue;margin-top: 40px;}
+			.box2 ul{list-style: none;display:inline-flex;}/*display:inline-flex;可以将整个元素设为浮动，但是位置默认放置于中间*/
+			.box2 ul li{width: 60px;height:40px;border: 1px solid cadetblue;}
+			
+			.box3{width:600px;height: 100px;border:1px solid cadetblue;margin-top: 40px;}
+			.box3 ul{list-style: none;display:flex;flex-direction: row-reverse;}
+			/*flex-direction: row;默认位置，起点在左侧   flex-direction: row-reverse;起点在右侧*/
+			.box3 ul li{width: 60px;height:40px;border: 1px solid cadetblue;}
+			
+			.box4{width:600px;height: 100px;border:1px solid cadetblue;margin-top: 40px;}
+			.box4 ul{list-style: none;display:flex;flex-direction: column;}
+			/*flex-direction: column;主轴的起点纵向排列，起点在上方       flex-direction: column-reverse;主轴的起点纵向排列  ，起点在下方；  */
+			.box4 ul li{width: 60px;height:40px;border: 1px solid cadetblue;}
+			
+			
+			.box5{width:100%;height: 100px;border:1px solid cadetblue;margin-top: 180px;display: flex;flex-wrap: wrap;}
+			          /* flex-wrap: wrap;判断子元素溢出时换行flex-wrap: nowrap;不换行flex-wrap: wrap-reverse;反转wrap排列*/
+			.box5 span{display: block;width:100px;border:1px solid cadetblue;}
+			
+			
+			.box6{width:100%;height: 100px;border:1px solid cadetblue;margin-top: 180px;display: flex;flex-wrap: nowrap;
+			       justify-content: space-between;      }
+			          /* justify-content: center;  弹性盒子元素在水平方向上的对齐方式 
+			           * 1.center为放置中间
+			           * 2.flex-start从起点开始对齐
+			           * 3.flex-end 从终点开始对齐
+			           * 4.space-between 分散对齐 */
+			.box6 span{display: block;width:100px;border:1px solid cadetblue;}
+			
+			
+			
+			.box7{width:100%;height: 100px;border:1px solid cadetblue;margin-top: 180px;display: flex;flex-wrap: wrap-reverse;
+			       justify-content: space-between; align-items: flex-start;     }
+			         /* 1.align-items: center; 弹性盒子元素中的文字或图片在侧轴方向上的对齐方式为居中位置,不是整个盒子的位置
+			          2.align-items: flex-start;紧靠起始边界底部.
+			          3.align-items: flex-end;紧靠起始边界头部 .
+			          4.align-items: baseline;文字对齐
+			          5.align-items: stretch;在子元素未设置高度时,将子元素拉伸到父元素的高度*/
+             .box7 span{display: block;width:100px;height:80px;border:1px solid cadetblue;}
+			
+			
+			
+			.box8{width:100%;height: 100px;border:1px solid cadetblue;margin-top: 180px;display: flex;flex-wrap: wrap-reverse;
+			       align-content: center; }
+			         /*align-content: ;用于修饰flex-wrap:;
+			          * 1.align-content: flex-start;各行向弹性盒的起始位置堆叠
+			           2. align-content: flex-end;各行向弹性盒的结束位置堆叠
+			           3.align-content: center; 各行向弹性盒的中间位置堆叠
+			           4.align-content: space-between;各行向弹性盒的平均分布
+			           5.align-content: stretch;各行伸展占据剩余空间
+			           6.*/
+             .box8 span{display: block;width:100px;height:40px;border:1px solid cadetblue; }
+             
+             
+             .box9{width:100%;height: 100px;border:1px solid cadetblue;margin-top: 180px;display: flex;flex-wrap: wrap-reverse;}
+			        
+             .box9 span{display: block;width:100px;height:100px;border:1px solid cadetblue; }
+             .box9 span:nth-of-type(1){flex-grow: 2;}/*flex-grow: 2;表示分的剩余空间中的2份,默认值为0*/
+             .box9 span:nth-of-type(3){flex-grow: 2;}/*flex-shrink: 1;弹性盒的收缩比例,默认为1*/
+             
+             .box10{width:100%;height: 100px;border:1px solid cadetblue;margin-top: 180px;display: flex;flex-wrap: wrap;}
+             .box10 span{display: block;width:100px;height:100px;border:1px solid cadetblue; }
+             .box10 span:nth-of-type(1){flex-basis: 300px;}/*flex-basis: 300px;设置弹性盒伸缩基准值，无论弹性盒多小，保持基准值设定的宽高*/
+             .box10 span:nth-of-type(2){flex-shrink: 1.5;}/*flex-shrink: 1;弹性盒的收缩比例,默认为1*/
+             
+			
+			 .box11{width:100%;height: 100px;border:1px solid cadetblue;margin-top: 180px;display: flex;flex-wrap: wrap-reverse;}
+			        
+             .box11 span{display: block;width:100px;height:100px;border:1px solid cadetblue; }
+             .box11 span:nth-of-type(1){order: 3;}/*{order: 3;表示元素排列的次序，默认值为0，值越小越在前面，可为负值*/
+             .box11 span:nth-of-type(3){order: 2;}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+		</div>
+		
+		<div class="box2">
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+		</div>
+		
+		
+		<div class="box3">
+			<h3>flex-direction: row;默认位置，起点在左侧 </h3>
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+		</div>
+		
+		
+		<div class="box4">
+			<h3>flex-direction: column;主轴的起点纵向排列，起点在上方 </h3>
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+		</div>
+		
+		
+		
+		<div class="box5">
+			<h3>flex-wrap: wrap;判断子元素溢出时换行</h3>
+			<span>1</span>
+			<span>2</span>
+			<span>3</span>
+			<span>4</span>
+			<span>5</span>
+			<span>6</span>
+		</div>
+		
+		
+		<div class="box6">
+			<h3>justify-content: center;  弹性盒子元素在水平方向上的对齐方式 * 1.center为放置中间 * 2.flex-start从起点开始对齐</h3>
+			<span>1</span>
+			<span>2</span>
+			<span>3</span>
+			<span>4</span>
+			<span>5</span>
+			<span>6</span>
+		</div>
+		
+		<div class="box7">
+			<h3>align-items: center; 弹性盒子元素在侧轴方向上的对齐方式为居中位置</h3>
+			<span>北</span>
+			<span>京</span>
+			<span>你</span>
+			<span>好</span>
+			<span>！</span>
+			<span>！</span>
+		</div>
+		
+		<div class="box8">
+			<h4>align-content: ;用于修饰flex-wrap:;1.align-content: flex-start;各行向弹性盒的起始位置堆叠</h4>
+			<span>春眠不觉晓，处处闻啼鸟</span>
+			<span>京</span>
+			<span>你</span>
+			<span>好</span>
+			<span>！</span>
+			<span>！</span>
+		</div>
+		
+		<div class="box9">
+			<h3>flex-grow: 2;表示分的剩余空间中的2份,默认值为0</h3>
+			<span>春眠不觉晓，处处闻啼鸟</span>
+			<span>京</span>
+			<span>你</span>
+			<span>好</span>
+			<span>！</span>
+			<span>！</span>
+		</div>
+		
+		<div class="box10">
+			<h3>flex-basis: 300px;设置弹性盒伸缩基准值，无论弹性盒多小，保持基准值设定的宽高</h3>
+			<span>春眠不觉晓，处处闻啼鸟</span>
+			<span>京</span>
+			<span>你</span>
+			<span>好</span>
+			<span>！</span>
+			<span>！</span>
+		</div>
+		
+		<div class="box11">
+			<h3>order: 3;表示元素排列的次序，默认值为0，值越小越在前面，可为负值</h3>
+			<span>1</span>
+			<span>2</span>
+			<span>3</span>
+			<span>4</span>
+			<span>5</span>
+			<span>6</span>
+		</div>
+		
+	</body>
+</html>

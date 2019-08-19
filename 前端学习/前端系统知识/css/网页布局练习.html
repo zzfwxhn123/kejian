@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>网页布局练习</title>
+		<style type="text/css">
+			
+			*{
+				margin: 0;padding: 0;
+			}
+			ul li{
+			list-style: none;
+		}
+		.nav{
+			height: 60px;background: darkcyan;
+		}
+		.nav ul{
+			width: 960px;background: antiquewhite;margin: 0 auto;
+		}
+		.nav ul li{
+			float: left;color: salmon;
+			border-right: 1px black solid;
+			text-decoration: none;
+		}
+		.nav ul li a{
+			color: salmon;
+			text-decoration: none;
+			width: 119px;height: 60px;
+			display: block;
+			text-align: center;
+			line-height: 60px;
+		}/*text-align: center;
+			line-height: 60px;
+			使其在块内居中*/
+	     .nav ul li.last
+	     {
+		  	border-right: none;
+		  }/*此处li和.last要连在一起*/		
+		  .nav ul li a:hover{
+			background-color: burlywood;
+		}
+			#header{
+				height: 200px;
+				background:palevioletred;
+				font-size: 30px;
+				font-family: "楷体";
+				text-align:left;
+				background-color:#F7576F;
+			}
+			#header .head{
+				width: 990px;height: 400px;
+				background-color:#F7576F;
+				text-align:center;
+				margin: auto;
+			}
+			#case{
+				width:100%;height: 50px;
+				background-color: mediumvioletred;
+				margin: auto;
+				background-image: url(img/a7361b5d8ae0e871822ef8d2aea84d70_TB12TuwVNjaK1RjSZFAXXbdLFXa-120-48.png);
+				background-repeat: repeat;
+			}
+			#banner{
+				height: 400px;background-color:indianred;
+	 	  width: 100%;
+			}
+			.tab{
+            width:1200px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: #ccc;
+                }
+            .beta{
+            width: 1200px;
+            height: 300px;
+                  }	
+			#category{
+				height: 1005px;
+				height:200px;
+				background-color: palevioletred;
+				margin: auto;/*居中显示*/
+			}
+			#category .item{
+				width: 130px;height: 165px;/**/
+				padding-left: 25px;/*右填充*/
+				padding-right: 25px;/**/
+				padding-bottom: 25px;/**/
+				padding-top: 10px;/**/
+				border-right: 1px dashed antiquewhite;/*右边框 1一像素 虚线 棕色*/
+				float: left;
+				text-align: center;
+			}
+			#category .item.first{
+				padding-left: 0;/*取消左填充*/
+			}
+			#category .item.last{
+				padding-right: 0;/*取消右填充*/
+				border: 0;/*取消边框*/
+			}
+			#case .title-text{
+				width: 1005px;
+				margin: auto;/*水平居中*/
+				padding-top: 20px;/*上填充*/
+				padding-bottom: 10px;/*下填充*/
+				font-size: 45px;/*字体大小*/
+			}
+			#case .item-wrapper{
+				width: 1000px;/**/
+				margin: auto;/*水平居中*/
+				overflow: auto;/*自动设置高度，防止因子元素浮动而高度塌陷*/
+			}
+			#case .item-wrapper .item{
+				width: 320px;/**/
+				height: 330px;/**/
+				background-color: mediumseagreen;
+				float: left;/*左浮动*/
+			}
+			#case .item-wrapper .item.mg{
+				margin-left: 20px;/*左右边距*/
+				margin-right: 20px;
+				}
+		    #case p{
+					width: 1005px;/**/
+					margin-left: auto;/*水平居中*/
+					margin-right: auto;/*水平居中*/
+					margin-top: 15px;/*上边距*/
+					height: 40px;
+					line-height: 40px;/*行高与高度一致时，文字居中垂直*/
+					text-align:center ;/*文字 水平居中*/
+					font-size: 35px;/*字体大小*/
+					color: thistle;/*字体颜色*/
+				}	
+		</style><!-- -->
+	</head>
+	<body>
+		<div class="nav">
+			<ul>
+				<li><a href="#">集团介绍</a></li>
+				<li><a href="#">集团介绍</a></li>
+				<li><a href="#">集团介绍</a></li>
+				<li><a href="#">集团介绍</a></li>
+				<li><a href="#">集团介绍</a></li>
+				<li><a href="#">集团介绍</a></li>
+				<li><a href="#">集团介绍</a></li>
+				<li class="last"><a href="#">集团介绍</a></li>
+             </ul>
+		</div>
+		<div id="header">
+			<a>演示</a>
+			  <div class="head">
+			  	<a><h1>女装潮流专场</h1></a>
+			  	<br><a href="https://pages.tmall.com/wow/a/act/tmall/22204/pageFrame?wh_weex=true&wh_biz=tm&pos=1&wh_bizStageId=518&acm=20140506001.1003.2.5918249&wx_main_hc=true&scm=1003.2.20140506001.OTHE" style="color:darkred"><h3>闺蜜专享特惠</h3></a>
+			  	
+			  </div><!-- 头部标题-->
+		</div>
+		
+		<div  id="banner"><!--1中部样式 -->
+		    <div class="tab" id="tabe">
+             <img src="O1CN01Fg75pP1Vub3KpDqsd_!!2838892713.jpg" id="beta" style="width: 1200px;height: 400px;position:relative;float: none;" />
+            </div>
+		</div>
+		
+		<div  id="case">
+			<img src="img/a7361b5d8ae0e871822ef8d2aea84d70_TB12TuwVNjaK1RjSZFAXXbdLFXa-120-48.png" />
+			
+			
+			
+		</div><!--2中部样式 -->
+		<div  id="category"><!-- 底部样式及小容器边框-->
+			 <div class="item first">
+			 	<a href="https://onemore.tmall.com/campaign-10642-105.htm?wx_navbar_transparent=true&shopId=103228133&userId=1652714638&pathInfo=/campaign-10642-105.htm&scm=1007.17612.124711.5921421_0_0"><img src="img/TB1KRilThTpK1RjSZFMXXbG_VXa.jpg_288x480Q75s0.jpg_.webp.jpg"align="center" width="130px" height="130px"/></a>
+			 	<br><br><a href="https://uniqlo.tmall.com/campaign-10642-252.htm?wx_navbar_transparent=true&shopId=57303596&userId=196993935&pathInfo=/campaign-10642-252.htm&scm=1007.17612.124711.5921421_0_0" style="color:wheat " ><h3 >优衣库旗舰店</h3></a>
+			 </div>
+			 <div class="item">
+			 	<img src="img/TB1hXIeV3HqK1RjSZFPXXcwapXa.jpg_288x480Q75s0.jpg_.webp.jpg"align="center" width="130px" height="130px" /><br><br><a style="color:wheat " ><h3 >乐町旗舰店</h3></a>
+			 </div> 
+			 <div class="item">
+                 <img src="img/TB14q9RV3HqK1RjSZFEXXcGMXXa.jpg_288x480Q75s0.jpg_.webp.jpg"align="center" width="130px" height="130px" /><br><br><a style="color:wheat " ><h3 >波司登旗舰店</h3></a>		 	
+			 </div>
+			 <div class="item">
+			 	 <img src="img/TB1OoGOoTZmx1VjSZFGXXax2XXa.jpg_288x480Q75s0.jpg_.webp.jpg"align="center" width="130px" height="130px" /><br><br><a style="color:wheat " ><h3 >ZARA旗舰店</h3></a>
+
+			 </div>
+			 <div class="item">
+			 	 <img src="img/TB1rDCrVMHqK1RjSZFkXXX.WFXa.jpg_288x480Q75s0.jpg_.webp.jpg"align="center" width="130px" height="130px" /><br><br><a style="color:wheat " ><h3 >CK旗舰店</h3></a>
+
+			 </div>
+			 <div class="item">
+			 	 <img src="img/TB1Rja2TgHqK1RjSZFPXXcwapXa.jpg_288x480Q75s0.jpg_.webp.jpg"align="center" width="130px" height="130px" /><br><br><a style="color:wheat " ><h3 >音儿旗舰店</h3></a>
+
+			 </div>
+			 <div class="item">
+			 	 <img src="img/TB1X0EaVwHqK1RjSZJnXXbNLpXa.jpg_288x480Q75s0.jpg_.webp.jpg"align="center" width="130px" height="130px" /><br><br><a style="color:wheat " ><h3 >朗姿旗舰店</h3></a>
+
+			 </div>
+			 <div class="item last">
+			 	<img src="img/TB1zveyVNTpK1RjSZR0XXbEwXXa.jpg_288x480Q75s0.jpg_.webp.jpg"align="center" width="130px" height="130px" /><br><br><a style="color:wheat " ><h3 >诗凡黎旗舰店</h3></a>
+
+			 </div>	
+		</div>
+	</body>
+	<script>
+    //使用数组保存图片的地址
+    var imgs=["img/O1CN0151qoTR1Vub3SeemOM_!!2838892713.jpg","img/O1CN01D2fO5m1Vub30Dyiv7_!!2838892713.jpg","img/O1CN01wFsE3L1Vub2xdM4et_!!2838892713.jpg"];
+    var index=0;
+    function qiehuan(){
+        document.getElementById("beta").src=imgs[index];
+        index++;
+        if(index > 4){
+            index=0;
+        }
+    }
+    setInterval("qiehuan()",4000);
+</script>
+</html>
+

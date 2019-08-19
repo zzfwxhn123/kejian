@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;background-color:#CFCAB7;}
+			.head{width: 100%;height: 100px;display: flex;margin-top: 20px;}
+			.head ul{list-style: none;display: flex;}
+			.head ul li{height: 100px;justify-content: space-between;flex-wrap: nowrap;align-items: center;text-align: center;}
+			.head ul li:nth-of-type(1){width: 15%;height:80px ;}
+			.head ul li:nth-of-type(2){width: 35%;}
+			.head ul li:nth-of-type(3){width: 20%;}
+			.head ul li:nth-of-type(4){width: 15%;height:80px ;}
+			.head ul li:nth-of-type(5){width: 15%;height:80px ;}
+			.head ul li:hover{background: rgba(0,0,0,0.5);}
+			.head .icon{width: 100%;height: 70px;margin-top: 10px;}
+			
+			.search{width: 100%;height: 60px;display: flex;margin-top: 10px;}
+			.search ul{width: 100%;list-style: none;display: flex;}
+			.search ul li{width: 20%;height: 60px;justify-content:space-between;flex-direction:row;flex-wrap: nowrap;text-align: center;}
+			.search ul li a{text-decoration: none;color: black;font-size: 28px;}
+			.search ul li:hover{background: rgba(0,0,0,0.5);}
+			
+			
+			.cieclepic{width: 100%;height: 350px;border: 1px grey solid;display: flex;}
+			.cieclepic img{width: 100%;height: 350px;}
+			
+			
+			.listicon{width: 100%;height: 120px;display: flex;margin-top: 20px;}
+			.listicon ul{list-style: none;display: flex;}
+			.listicon ul li{width: 20%;height: 80px;flex-wrap: nowrap;align-items: center;text-align: center;}
+			.listicon ul li:hover{background: rgba(0,0,0,0.5);}
+			.listicon ul li a{text-decoration: none;color: black;font-size: 24px;}
+			.listicon .icon{width: 100%;height: 70px;}
+			
+			
+			
+			
+			.middlebox{width: 100%; height:400px;float: left;margin: 20px auto;display: flex;}
+			.middlebox .box1{ width: 40%; height: 400px;border: 1px black solid;margin-top: 30px;}
+			.middlebox .box2{ width: 60%; height: 400px;border: 1px black solid;margin-top: 30px;display: flex;}
+	          .p1{
+	          	overflow: hidden;
+				width: 48%;height: 380px;/**/
+				border: 1px solid darkcyan;/*右边框 1一像素 虚线 棕色*/
+				
+				text-align: center;
+				font-size: 18px;
+				font-family: "楷体";
+				color: #844813;
+				margin: 5px;
+				background-color: cadetblue;
+				
+			         }
+			         
+			.middlebox2{width: 100%; height:400px;float: left;margin: 20px auto;display: flex;}
+			.middlebox2 .box1{ width: 40%; height: 400px;border: 1px black solid;margin-top: 30px;}
+			.middlebox2 .box2{ width: 60%; height: 400px;border: 1px black solid;margin-top: 30px;}
+	        
+		      
+		    .stiky{position: fixed;z-index: 888;width:100%;height: 100px;text-align: center;margin-top: 100%;}/*此处是整个页面的固定条*/
+			.stiky ul{list-style: none;}
+			.stiky ul li{width:33%;height: 100px;border: 1px grey solid;float: left;text-align: center;transition: all 0.5s linear;}
+			.stiky ul li:hover{border-bottom: 4px #378694 solid;}
+			.stiky ul li a{text-decoration: none;font-size: 24px;color: black;line-height: 65px;font-weight: bolder;line-height: 30px;}
+			.stiky ul li a:hover{color: brown;} 
+			.stiky .icon{width: 100%;height: 60px;}
+		</style>
+	</head>
+	<body>
+		<div class="head">
+			<ul>
+				<li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kcb_hangyeicon-9"></use></svg></li>
+				<li><input type="text"style="width: 90%;flex-grow: 1;height:60px;border: 1px solid gray;border-radius: 20px;margin-top: 15px;"></li>
+				<li><input type="submit" value="搜索"style="width: 70%;flex-grow: 1;height:60px;margin-top: 15px;font-size: 24px;"></li>
+				<li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kcb_hangyeicon-17"></use></svg></li>
+				<li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wechat"></use></svg></li>
+			</ul>
+		</div>
+		
+		
+		
+		
+		<div class="search"> 
+		    <ul>
+		    	<li><a href="#">推荐</a></li>
+		    	<li><a href="#">心灵</a></li>
+		    	<li><a href="#">管理</a></li>
+		    	<li><a href="#">管理</a></li>
+		    	<li><a href="#">职场</a></li>
+		    	<li><a href="#">家庭</a></li>
+		    	<li><a href="#">人文</a></li>
+		    </ul>
+		</div>
+		
+		<div class="stiky"><!--固定在整个页面上显示-->
+			<ul>
+				<li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-order"></use></svg><br><a>读书</a></li>
+				<li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-icon-test2"></use></svg><br><a>我的</a></li>
+				<li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search"></use></svg><br><a>发现</a></li>
+				
+			</ul>
+		</div>
+		
+		
+		<div class="cieclepic">
+			<img src="image/155911241291781219.jpg"id="beta">
+			
+		</div>
+		
+		<div class="listicon">
+			
+			<ul>
+				<li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kcb_hangyeicon-5"></use></svg><br><a href="#">演唱会</a></li>
+				<li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kcb_hangyeicon-7"></use></svg><br><a href="#">话剧歌剧</a></li>
+				<li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kcb_hangyeicon-8"></use></svg><br><a href="#">体育</a></li>
+				<li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kcb_hangyeicon_huaban"></use></svg><br><a href="#">儿童亲子</a></li>
+				<li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kcb_hangyeicon-16"></use></svg><br><a href="#">展览休闲</a></li>
+			</ul>
+		</div>
+		
+		
+		
+		<div class="middlebox">
+			
+			<div class="box1">
+				<img src="image/160746_n.jpg"style="width: 100%;height: 400px;">
+			</div>
+		     	
+		     
+		    <div  class="box2">
+			     
+			           <div class= "p1" >
+				          <img src="image/27853546-1_l_4.jpg"align="left" style="width: 100%;height: 400px;" >
+				       </div>
+			           <div class= "p1">
+			           
+				           <img src="image/27862677-1_l_28.jpg" align="left"  style="width: 100%;height: 400px;" >
+				          
+			           </div>
+		    </div>
+		</div>
+		
+		<div class="middlebox2">
+			
+			<div class="box1">
+				<img src="image/26919013-1_l_8.jpg"style="width: 100%;height: 400px;">
+			</div>
+		     	
+		     
+		    <div  class="box2">
+			                 
+			     <h1 style="margin: 30px;">不管教的勇气</h1><br><p style="margin-left: 30px;font-size: 26px;">当然，光有勇气不行，不管有不管的手法</p>
+			          
+		    </div>
+		</div>
+		
+		
+		<div class="middlebox2">
+			
+			<div class="box1">
+				<img src="image/27870029-1_l_3.jpg"style="width: 100%;height: 400px;">
+			</div>
+		     	
+		     
+		    <div  class="box2">
+			                 
+			     <h1 style="margin: 30px;">不管教的勇气</h1><br><p style="margin-left: 30px;font-size: 26px;">当然，光有勇气不行，不管有不管的手法</p>
+			          
+		    </div>
+		</div>
+		
+		<div class="middlebox2">
+			
+			<div class="box1">
+				<img src="image/27870029-1_l_3.jpg"style="width: 100%;height: 400px;">
+			</div>
+		     	
+		     
+		    <div  class="box2">
+			                 
+			     <h1 style="margin: 30px;">不管教的勇气</h1><br><p style="margin-left: 30px;font-size: 26px;">当然，光有勇气不行，不管有不管的手法</p>
+			          
+		    </div>
+		</div>
+		
+		
+		
+	</body>
+	<script src="js/iconfont.js"></script>
+	<script>
+    //使用数组保存图片的地址
+    var imgs=["image/O1CN01ztpxQE1ewH3JsbMAR_!!196993935.jpg","image/O1CN014BHgV31ewH34bnkM9_!!196993935.jpg",
+              "image/O1CN01xgAhSc1ewH3H4DWd8_!!196993935.jpg","image/O1CN01OkIr9Q1ewH2alhycm_!!196993935.jpg"];
+    var index=0;
+    function qiehuan()
+    {
+        document.getElementById("beta").src=imgs[index];
+        index++;
+        if(index > 5){
+            index=0;
+                     }
+    }
+    setInterval("qiehuan()",4000);
+    </script>
+</html>

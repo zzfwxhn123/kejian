@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<style type="text/css">
+			* {
+				margin: 0;/*将所有的元素边距都设置为0
+				
+				margin-top:10px 上边距
+				       right
+				       bottom
+				       left 
+				      padding: 20px;内部填充*/
+			}
+			#box{
+				width: 1000px;/*父元素的宽要与子元素的总宽一致*/
+				overflow: auto;
+				margin: auto;/*让父元素自动设置边距，在左右边距相当，即可达到居中效果，水平方向有效*/
+			}
+			.item{
+				float: left;/*左浮动*/
+			    margin: 30px;/*间距为20px*/
+			    border: 10px solid blueviolet;
+			    padding: 30px color:mediumseagreen;/* 填充长度，颜色*/
+			}
+        </style>
+	</head>
+	<body>
+		<div id="box">
+			<div class="item" >
+				<img src="img/mmexport1535125456194.jpg" width="200px" height="200px"/><br>
+                                                               <!--<br>是换行的标签 src是引入图片的标签，与引入背景图片不同 -->
+				清源山活动
+			</div>
+		    <div class="item" >
+		    	<img src="img/mmexport1535125459317.jpg"  width="200px" height="200px"/><br>
+		    	志愿活动
+		    </div>
+		    <div class="item" >
+		    	<img src="img/mmexport1535125463244.jpg"  width="200px" height="200px" /><br>
+		    	一日游
+		    </div>
+		</div>
+	</body>
+</html>

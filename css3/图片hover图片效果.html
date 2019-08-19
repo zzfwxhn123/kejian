@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.boxpic{width: 600px;height: 350px;border: 1px black solid;box-shadow: 5px 5px 8px;
+			              position: relative;margin: 50px auto;transition: all 1.5s;overflow: hidden;}/*使用定位时,超出内容隐藏*/
+			.boxpic .shadow{width: 600px;height: 360px;position: absolute;top: -20px;background-color: grey;opacity: 0; transition: all 1.5s;}
+			  .boxpic:hover .shadow{opacity: 0.7;}
+			/*先设置阴影背景的样式,然后在整个父容器下设置hover效果,与display不同,这个可以设置变换效果
+			格式 1.父容器 :hover 想要出现的页面*/
+		
+			.boxpic h3{ width: 100%;font-size:28px;color:whitesmoke;top:-60px;text-align: center;position: absolute;transition: all 1.5s;}
+			  .boxpic:hover h3{top:30px;}
+			
+			.boxpic img:nth-of-type(1){width: 600px;height: 350px;top: 0;}
+			
+			.boxpic img:nth-of-type(2){position: absolute;top: 80px;left:-200px;transition: all 1.5s linear;}
+			.boxpic:hover img:nth-of-type(2){top:90px;left:200px;}
+			
+			.boxpic img:nth-of-type(3){position: absolute;bottom: -90px;right: 0;transition: all 1.5s linear;}
+			.boxpic:hover img:nth-of-type(3){bottom: 90px;right: 200px;}
+			
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="boxpic">
+			<img src="../前端学习/前端系统知识/image/xmad_15553962556499_GTdME (1).jpg">
+			<p class="shadow"></p>
+			<h3>小米手机</h3>
+			<img src="../前端学习/前端系统知识/img/0103b372d1609ad9d09eba72dc82b08718.jpg">
+			<img src="../前端学习/前端系统知识/image/小米标志.PNG">
+		</div>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;padding: 0;
+		   }/*定义整个页面的属性 */
+		
+		
+		ul li{
+			list-style: none;	
+		      }/*定义列表的属性 */
+		
+		.nav{
+			width: 1200px;height: 80px;
+			margin: 20px auto;
+		     }/*定义列表页面的属性 及整个页面的背景色*/
+		.nav li{
+			float: left;
+               }/* 定义行的属性*/    
+        .nav li a{display: block;width: 300px;height: 80px;text-align: center;color:brown ;
+        line-height: 80px;text-decoration:none;background-image:url(image/小米标志.PNG);}/*定义整个行内文字的属性  转为块属性 定义文字颜色及行内背景*/
+        
+        #p1 a:hover{background-position:  0  -80;}
+        #p2 a:hover{background-position: -300px -80px ;}
+        #p3 a:hover{background-position: -600px -80px ;}
+        #p4 a:hover{background-position: -900px -80px ;}/*图片背景向左位移量及向上位移量*/
+	
+	</style>
+	</head>
+
+	<body>
+		<ul class="nav">
+			<li id="p1"><a href="#">首页</a></li>
+			<li id="p2"><a href="#">新闻</a></li>
+			<li id="p3"><a href="#">娱乐</a></li>
+			<li id="p4"><a href="#">周刊</a></li>	
+		</ul>
+		
+		
+		
+	</body>
+</html>

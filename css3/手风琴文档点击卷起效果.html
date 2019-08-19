@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			.listbox{width: 400px;margin: 50px auto;position: relative;}
+			.list{position: relative;  }
+			.listbox a{display:block;height:35px;font-size: 22px;color: white;text-align: left;border-radius: 5px;text-decoration: none;
+			            background-color: goldenrod;background:linear-gradient(#cecece,#8f8f8f);line-height: 35px;padding-left: 10px;}			
+			    
+			    .list a:hover{background:linear-gradient(#6bb2ff,#2288dd);color: #fff;}
+			  /*设置头部的hover效果 当希望点击整个头框就能出现hover效果时，就将a标签设置为块元素，就像在父元素上设置整个hover效果一样*/
+			   .list span{width: 0;height: 0;border-left: 5px solid rgba(0,0,0,0);border-right: 5px solid transparent;
+			                  border-top: 5px solid white;border-bottom: 5px solid transparent;position: absolute;
+			                  top: 15px;right: 15px;}
+			    .list:target span{border-top: 5px solid transparent;border-left: 5px solid #fff;right: 10px;}
+			                     /*三角形小图标的变换*/
+			   .listbox p{height: 0;overflow: auto;padding-left: 10px;margin: 5px 0;transition: 0.5s;}
+			                 /*通过overflow: auto;设置进度条*/
+			      .list:target p{height: 100px;}/*设置展开时的高度*/
+			
+		</style>
+		<title></title>
+	</head>
+	<body>
+		<div class="listbox">
+			
+			<div class="list"id="list1">
+			<a href="#list1">头条新闻</a>
+			<span></span><!--三角形小图标的设置-->
+			<p>实际操作过程：<br>
+			1.先设置一个大的父容器，在其中设置想要的几个小容器<br>
+			2.小容器的列表头部设置好高度及边框样式以及其中的单页面锚点的链接<br>
+			3.设置要出现的图文放置在p标签中，然后设置高度为0，<br>通过.list:target p{height: 100px;} overflow: auto;的设置点击时才展开，类似于hover<br>
+			4.三角形小图标的变换
+			</p><!--点击时才展开的图文-->
+			</div>
+			
+			<div class="list"id="list2">
+			<a href="#list2">头条新闻</a>
+			<span></span>
+			<p>hange you kind of want to get straight as you kind of want to get in shape and no numbers 
+				to crunch if you kind of want something that you kind of get the results you want what is
+				your dream but it makes best smart you can't kinda want that you gotta wonder with every part 
+				
+			</p>
+			</div>
+			
+			
+			<div class="list"id="list3">
+			<a href="#list3">头条新闻</a>
+			<span></span>
+			<p>hange you kind of want to get straight as you kind of want to get in shape and no numbers 
+				to crunch if you kind of want something that you kind of get the results you want what is
+				your dream but it makes best smart you can't kinda want that you gotta wonder with every part 
+				
+				  
+			</p>
+			</div>
+			
+			
+			
+		</div>
+	</body>
+</html>

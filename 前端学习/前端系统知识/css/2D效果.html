@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<style type="text/css">
+	.box1{width: 30px;height: 30px;background-color: royalblue;margin: 10px;transition: all;transition-duration: 2s;transition-delay: 2s;
+	       transition-timing-function:cubic-bezier( .25, .5,.25, .5);margin:20px; }/*1.transition-property: none/all/property;代表的是规定的css的属性,所有的都可获得过渡效果或者没有  2. transition-duration: 2s; 代表动画时间
+	3./transition-delay: 2s;代表延迟时间或者是过渡效果何时开始；
+	4./.box:hover代表鼠标点击时出现的效果
+	5./transition-timing-function: ease;代表属性过渡效果的曲线 （1.linear代表匀速 2.ease代表慢快慢 3.ease-in代表慢速开始 ease-out慢速结束
+	   4，ease-in-out 慢速开始和结束
+	6./transition-timing-function:cubic-bezier( .25, .5,.25, .5);定义值，选值在0-1之间。
+	 */	
+	.box1:hover{  width: 60px;height: 60px;background-color: mediumorchid; }	
+	
+	.box2{width: 60px;height: 80px;background-color: antiquewhite;transition: all;transition-duration: 2s;
+	      margin: 60px;transform: rotate(25deg);margin: auto;}	
+	.box2:hover{width: 120px;height: 120px;background-color:seagreen;}	/*transform: rotate(25deg);代表的是旋转的角度*/
+	
+	
+	
+	</style>
+	
+	</head>
+	<body>
+		<div class="box1">css过渡</div>
+		<div class="box2">2D旋转</div>
+		
+		
+	</body>
+</html>

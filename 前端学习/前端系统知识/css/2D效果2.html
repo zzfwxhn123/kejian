@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{width: 80px; height: 80px; background-color: darkgreen;transition: all 2s;margin: 40px auto;border: seagreen solid;  }
+			div:nth-child(1):hover{ transform: translateX(300px);}/*向x轴平移*/
+			div:nth-child(2):hover{transform: rotate(-60deg);}/*逆时针旋转60度*/
+			div:nth-child(3):hover{transform: scale(2,.5);}/*缩放 长变为两倍，宽变为0.5*/
+			div:nth-child(4):hover{transform: skew(20deg,20deg);}/*扭曲 向左上方 右下方拉扯*/
+			div:nth-child(5):hover{transform: translateX(300px);rotate(-60deg); scale(2,.5);skew(20deg,20deg);}/*translateX(300px);在前，先实现他*/
+			div:nth-child(6):hover{transform: rotate(-60deg); scale(2,.5);skew(20deg,20deg);translateX(300px); }/*translateX(300px);在后，不实现*/
+		</style>
+		
+		
+	</head>
+	<body>
+		
+		<div>2d平移</div>
+		<div>2d旋转</div>
+		<div>2d缩放</div>
+		<div>2d扭曲</div>
+		<div>2d综合</div>
+		<div>2d综合2</div>
+	</body>
+</html>

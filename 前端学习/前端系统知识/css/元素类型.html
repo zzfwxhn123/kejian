@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		a{
+			background-color: red;
+		}
+		.box0{
+			
+			width:200px;height: 40px;background-color: chocolate;
+			display: block;/*改为块元素inline改为行元素*/
+		}
+		.box1 span{
+			/*display: none;/*隐藏元素*/
+			display:list-item/*变为列表
+		}
+		
+		
+	</style>
+	<body>
+	</body>
+           <!--
+           	1/块状元素 独自占据一行：div dl dt dd ul h1-h6 p form table tr td;自己定义宽高，不能嵌套块元素，只能是行元素比如文字。
+           	2/行内元素 始终以行内逐个进行显示：a span i em strong b;可以定义padding border margin background等属性，不能定义宽和高
+           	background只出现在文字部分。
+           	3/可变元素 applet-Java applet button按钮 del删除文本 iframe-inline frame ins map图片区块 object-object对象 script客户端脚本
+             4/display可以更改元素类型。块转为行，行转为块 display none隐藏元素不显示
+           -->
+           <div class="box0">
+           	<a href="#">邹志芬 邹志芬</a>
+            <span> 我是邹志芬</span>
+           </div>
+            <div class="box1"> 我是邹志芬i的呢人物谱法和内容更具备图片给i【和剧本内容，居民皮肤【吗
+                <span>我是邹志芬</span>
+                <span>我是邹志芬</span>
+                <span>我是邹志芬</span>
+                <span>我是邹志芬</span>
+            </div>
+           
+           
+</html>
